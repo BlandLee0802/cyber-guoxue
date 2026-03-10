@@ -11,20 +11,20 @@ export default function HistoryPage() {
       <header className="bg-xuanqing py-6 px-6">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <Link to="/" className="inline-flex items-center gap-2 text-chijin/60 hover:text-chijin transition-colors">
-            <span>←</span>
-            <span className="font-serif text-sm">返回首页</span>
+            <span>?</span>
+            <span className="font-serif text-sm">????</span>
           </Link>
-          <h1 className="font-serif text-lg text-yuebai">个人中心</h1>
+          <h1 className="font-serif text-lg text-yuebai">????</h1>
         </div>
       </header>
 
       <div className="max-w-3xl mx-auto px-6 py-10">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="flex items-center gap-3 mb-8">
-            <span className="text-3xl">📋</span>
+            <span className="text-3xl">??</span>
             <div>
-              <h2 className="font-serif text-2xl text-xuanqing">历史测算记录</h2>
-              <p className="text-mohui/50 text-sm">共 {history.length} 条记录</p>
+              <h2 className="font-serif text-2xl text-xuanqing">??????</h2>
+              <p className="text-mohui/50 text-sm">? {history.length} ???</p>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ export default function HistoryPage() {
                   </div>
                   <div className="flex items-center gap-4">
                     <span className="text-xs px-3 py-1 bg-chijin/10 text-chijin rounded-full">{item.status}</span>
-                    <span className="text-mohui/30 group-hover:text-chijin transition-colors">→</span>
+                    <span className="text-mohui/30 group-hover:text-chijin transition-colors">?</span>
                   </div>
                 </Link>
               </motion.div>
@@ -59,10 +59,10 @@ export default function HistoryPage() {
 
           {history.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-6xl mb-4">📭</p>
-              <p className="text-mohui/50 font-serif">暂无测算记录</p>
+              <p className="text-6xl mb-4">??</p>
+              <p className="text-mohui/50 font-serif">??????</p>
               <Link to="/input" className="inline-block mt-6 px-8 py-3 bg-xuanqing text-chijin font-serif rounded-lg hover:bg-chijin hover:text-xuanqing transition-all">
-                开始第一次测算
+                ???????
               </Link>
             </div>
           )}
